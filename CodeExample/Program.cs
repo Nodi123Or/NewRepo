@@ -55,7 +55,7 @@ Console.WriteLine("Input M for middle string finder or H for markdown parser: ")
 
             string inputText = Console.ReadLine();
 
-            string middleOfString = MiddleStringFinder.getMiddle(inputText);
+            string middleOfString = MiddleStringFinder.GetMiddle(inputText);
 
             Console.WriteLine("Middle string: " + middleOfString);
 

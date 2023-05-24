@@ -11,7 +11,7 @@ namespace TestProject1
 			string inputText = "";
 
 			// Act & Assert
-			Assert.ThrowsException<Exception>(() => MiddleStringFinder.getMiddle(inputText));
+			Assert.ThrowsException<Exception>(() => MiddleStringFinder.GetMiddle(inputText));
 		}
 
 		[TestMethod]
@@ -21,7 +21,7 @@ namespace TestProject1
 			string inputText = new string('a', 1001);
 
 			// Act & Assert
-			Assert.ThrowsException<Exception>(() => MiddleStringFinder.getMiddle(inputText));
+			Assert.ThrowsException<Exception>(() => MiddleStringFinder.GetMiddle(inputText));
 		}
 
 		[TestMethod]
@@ -31,7 +31,7 @@ namespace TestProject1
 			string inputText = "testing";
 
 			// Act
-			string result = MiddleStringFinder.getMiddle(inputText);
+			string result = MiddleStringFinder.GetMiddle(inputText);
 
 			// Assert
 			Assert.AreEqual("t", result);
@@ -44,7 +44,7 @@ namespace TestProject1
 			string inputText = "test";
 
 			// Act
-			string result = MiddleStringFinder.getMiddle(inputText);
+			string result = MiddleStringFinder.GetMiddle(inputText);
 
 			// Assert
 			Assert.AreEqual("es", result);
@@ -57,7 +57,7 @@ namespace TestProject1
 			string inputText = "middle";
 
 			// Act
-			string result = MiddleStringFinder.getMiddle(inputText);
+			string result = MiddleStringFinder.GetMiddle(inputText);
 
 			// Assert
 			Assert.AreEqual("dd", result);
@@ -70,7 +70,7 @@ namespace TestProject1
 			string inputText = "A";
 
 			// Act
-			string result = MiddleStringFinder.getMiddle(inputText);
+			string result = MiddleStringFinder.GetMiddle(inputText);
 
 			// Assert
 			Assert.AreEqual("A", result);

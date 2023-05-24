@@ -8,7 +8,7 @@ namespace CodeExample.Service
 {
 	public static class MiddleStringFinder
 	{
-		public static string getMiddle(string inputText)
+		public static string GetMiddle(string inputText)
 		{
 			if (0 >= inputText.Length || 1000 <= inputText.Length)
 			{
